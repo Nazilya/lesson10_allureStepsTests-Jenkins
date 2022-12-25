@@ -1,11 +1,12 @@
 package qa.demo.tests;
 
 import org.junit.jupiter.api.Test;
+import qa.demo.pages.RegistrationPage;
 import qa.demo.testData.TestData;
 
 public class RegistrationWithStepsINPageTest extends BaseTest {
     private TestData studentsData = new TestData();
-
+    private RegistrationPage registrationPage = new RegistrationPage();
     @Test
     void successfulRegistrationWithStepsInPageTest() {
         registrationPage.openPage()

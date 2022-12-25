@@ -13,7 +13,6 @@ import qa.demo.pages.RegistrationPage;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class BaseTest {
-    protected RegistrationPage registrationPage = new RegistrationPage();
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
